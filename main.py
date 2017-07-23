@@ -15,7 +15,7 @@ class Application(Frame):
         self.alertButton.pack()
 
     def hello(self):
-        name = self.nameInput().get() or 'World'
+        name = self.nameInput.get() or 'World'
         messagebox.showinfo('Message', 'Hello , %s' % name)
 
 
