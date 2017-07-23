@@ -1,7 +1,6 @@
 from tkinter import *
 import tkinter.messagebox as messagebox
 
-
 class Application(Frame):
     def __init__(self, master=None):
         Frame.__init__(self, master)
@@ -15,10 +14,11 @@ class Application(Frame):
         self.alertButton.pack()
 
     def hello(self):
-        name = self.nameInput().get() or 'World'
-        messagebox.showinfo('Message', 'Hello , %s' % name)
-
+        name = self.nameInput.get() or 'world'
+        messagebox.showinfo('Message', 'Hello, %s' % name)
 
 app = Application()
-app.master.title('Hello, World')
+# 设置窗口标题:
+app.master.title('Hello World')
+# 主消息循环:
 app.mainloop()
